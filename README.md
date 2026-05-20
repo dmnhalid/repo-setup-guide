@@ -1,67 +1,67 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=180&section=header&text=repo-setup-guide&fontSize=44&fontColor=7CFFB2&fontAlignY=38&desc=Profesyonel%20bir%20repo%20nas%C4%B1l%20kurulur%3F%20%E2%80%94%20Ad%C4%B1m%20ad%C4%B1m%20rehber&descAlignY=58&descSize=14&descColor=8892b0&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=180&section=header&text=repo-setup-guide&fontSize=44&fontColor=7CFFB2&fontAlignY=38&desc=A%20step-by-step%20guide%20to%20setting%20up%20a%20professional%20repository&descAlignY=58&descSize=14&descColor=8892b0&animation=fadeIn" />
 
 </div>
 
 <br/>
 
-> Sıfırdan profesyonel bir GitHub/GitLab deposu kurmak için gereken her şey: CI/CD, lisans, changelog, Kubernetes, observability ve daha fazlası. Her bölüm kendi klasöründe, açıklama + çalışan kod örnekleriyle.
+> Everything you need to build a professional GitHub/GitLab repository from scratch — CI/CD, licensing, changelog, Kubernetes, observability and more. Each topic lives in its own folder with explanations and working examples.
 
 ---
 
-## Konular
+## Topics
 
-| # | Konu | Açıklama | Durum |
-|---|------|----------|-------|
-| 01 | [README](./01-readme) | Etkili README nasıl yazılır, şablonlar | ⬜ |
-| 02 | [CI/CD Configuration](./02-cicd) | GitHub Actions & GitLab CI pipeline kurulumu | ⬜ |
-| 03 | [LICENSE](./03-license) | Lisans türleri, nasıl seçilir, nasıl eklenir | ⬜ |
-| 04 | [CHANGELOG](./04-changelog) | Keep a Changelog formatı, semantic versioning | ⬜ |
-| 05 | [CONTRIBUTING](./05-contributing) | Katkı rehberi, PR şablonu, branch stratejisi | ⬜ |
-| 06 | [Kubernetes](./06-kubernetes) | Deployment, Service, Ingress, ConfigMap örnekleri | ⬜ |
-| 07 | [Wiki](./07-wiki) | Repo wiki yapısı, dokümantasyon standartları | ⬜ |
-| 08 | [Integrations](./08-integrations) | Slack, Jira, SonarCloud, Dependabot bağlantıları | ⬜ |
-| 09 | [Observability](./09-observability) | Prometheus, Grafana, alert kuralları, dashboard | ⬜ |
+| # | Topic | Description | Status |
+|---|-------|-------------|--------|
+| 01 | [README](./01-readme) | How to write an effective README, templates | ⬜ |
+| 02 | [CI/CD Configuration](./02-cicd) | GitHub Actions & GitLab CI pipeline setup | ⬜ |
+| 03 | [LICENSE](./03-license) | License types, how to choose and add one | ⬜ |
+| 04 | [CHANGELOG](./04-changelog) | Keep a Changelog format, semantic versioning | ⬜ |
+| 05 | [CONTRIBUTING](./05-contributing) | Contribution guide, PR template, branch strategy | ⬜ |
+| 06 | [Kubernetes](./06-kubernetes) | Deployment, Service, Ingress, ConfigMap examples | ⬜ |
+| 07 | [Wiki](./07-wiki) | Repo wiki structure, documentation standards | ⬜ |
+| 08 | [Integrations](./08-integrations) | Slack, Jira, SonarCloud, Dependabot setup | ⬜ |
+| 09 | [Observability](./09-observability) | Prometheus, Grafana, alert rules, dashboards | ⬜ |
 
-> ⬜ Bekliyor · 🔄 Devam ediyor · ✅ Tamamlandı
+> ⬜ Pending · 🔄 In progress · ✅ Done
 
 ---
 
-## Klasör yapısı
+## Folder structure
 
 ```
 repo-setup-guide/
 │
 ├── 01-readme/
-│   ├── README.md          ← Açıklama
-│   └── templates/         ← Hazır şablonlar
+│   ├── README.md          ← Explanation
+│   └── templates/         ← Ready-to-use templates
 │
 ├── 02-cicd/
 │   ├── README.md
-│   ├── github-actions/    ← .github/workflows/ örnekleri
-│   └── gitlab-ci/         ← .gitlab-ci.yml örnekleri
+│   ├── github-actions/    ← .github/workflows/ examples
+│   └── gitlab-ci/         ← .gitlab-ci.yml examples
 │
 ├── 03-license/
 │   ├── README.md
-│   └── examples/          ← MIT, Apache, GPL örnekleri
+│   └── examples/          ← MIT, Apache, GPL examples
 │
 ├── 04-changelog/
 │   ├── README.md
-│   └── CHANGELOG.md       ← Örnek changelog
+│   └── CHANGELOG.md       ← Example changelog
 │
 ├── 05-contributing/
 │   ├── README.md
-│   ├── CONTRIBUTING.md    ← Örnek katkı rehberi
+│   ├── CONTRIBUTING.md    ← Example contribution guide
 │   └── pull_request_template.md
 │
 ├── 06-kubernetes/
 │   ├── README.md
-│   └── manifests/         ← deployment.yaml, service.yaml vb.
+│   └── manifests/         ← deployment.yaml, service.yaml etc.
 │
 ├── 07-wiki/
 │   ├── README.md
-│   └── structure/         ← Wiki sayfa şablonları
+│   └── structure/         ← Wiki page templates
 │
 ├── 08-integrations/
 │   ├── README.md
@@ -74,24 +74,22 @@ repo-setup-guide/
 
 ---
 
-## Her klasörün içeriği
-
-Her bölüm şu yapıyı takip eder:
+## Each folder follows the same structure
 
 ```
-XX-konu/
-├── README.md     ← Ne işe yarar · Ne zaman kullanılır · Nasıl kurulur · Örnekler
-└── ...           ← Konuya özgü dosyalar (yaml, json, md şablonları)
+XX-topic/
+├── README.md     ← What it is · When to use it · How to set it up · Examples
+└── ...           ← Topic-specific files (yaml, json, md templates)
 ```
 
 ---
 
-## Nasıl kullanılır?
+## How to use
 
-İstediğin konuya git, README'yi oku, dosyaları kendi projena kopyala ve gerekli yerleri düzenle.
+Go to any topic folder, read the README, copy the files into your own project and adjust as needed.
 
 ```bash
-# Örnek: CI/CD dosyalarını kendi projena almak
+# Example: copy CI/CD files into your project
 cp -r 02-cicd/github-actions/.github /your-project/
 ```
 
